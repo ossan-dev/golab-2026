@@ -1,0 +1,73 @@
+TEXT main.main(SB) /home/ossan/Projects/golab-2026/cmd/plain/main.go
+  main.go:12		0x631700		493b6610		CMPQ SP, 0x10(R14)				
+  main.go:12		0x631704		0f8640010000		JBE 0x63184a					
+  main.go:12		0x63170a		55			PUSHQ BP					
+  main.go:12		0x63170b		4889e5			MOVQ SP, BP					
+  main.go:12		0x63170e		4883ec78		SUBQ $0x78, SP					
+  main.go:14		0x631712		48c74424680f000000	MOVQ $0xf, 0x68(SP)				
+  main.go:14		0x63171b		488d156c1b0e00		LEAQ 0xe1b6c(IP), DX				
+  main.go:14		0x631722		4889542460		MOVQ DX, 0x60(SP)				
+  main.go:14		0x631727		488d05d0ec0d00		LEAQ 0xdecd0(IP), AX				
+  main.go:14		0x63172e		bb03000000		MOVL $0x3, BX					
+  main.go:14		0x631733		488d4c2460		LEAQ 0x60(SP), CX				
+  main.go:14		0x631738		bf01000000		MOVL $0x1, DI					
+  main.go:14		0x63173d		4889fe			MOVQ DI, SI					
+  main.go:14		0x631740		e81bb9ffff		CALL os/exec.Command(SB)			
+  main.go:14		0x631745		e8f6e4ffff		CALL os/exec.(*Cmd).Output(SB)			
+  main.go:15		0x63174a		4885ff			TESTQ DI, DI					
+  main.go:15		0x63174d		0f85ea000000		JNE 0x63183d					
+  main.go:14		0x631753		48894c2440		MOVQ CX, 0x40(SP)				
+  main.go:14		0x631758		48895c2438		MOVQ BX, 0x38(SP)				
+  main.go:14		0x63175d		4889442448		MOVQ AX, 0x48(SP)				
+  main.go:19		0x631762		488d05577d0b00		LEAQ 0xb7d57(IP), AX				
+  main.go:19		0x631769		e8f289deff		CALL runtime.newobject(SB)			
+  main.go:19		0x63176e		4889442470		MOVQ AX, 0x70(SP)				
+  reader.go:159		0x631773		488d0586e00a00		LEAQ 0xae086(IP), AX				
+  reader.go:159		0x63177a		e8e189deff		CALL runtime.newobject(SB)			
+  reader.go:159		0x63177f		488b4c2438		MOVQ 0x38(SP), CX				
+  reader.go:159		0x631784		48894808		MOVQ CX, 0x8(AX)				
+  reader.go:159		0x631788		488b4c2440		MOVQ 0x40(SP), CX				
+  reader.go:159		0x63178d		48894810		MOVQ CX, 0x10(AX)				
+  reader.go:159		0x631791		833d7848370000		CMPL runtime.writeBarrier(SB), $0x0		
+  reader.go:159		0x631798		7508			JNE 0x6317a2					
+  reader.go:159		0x63179a		488b542448		MOVQ 0x48(SP), DX				
+  reader.go:159		0x63179f		90			NOPL						
+  reader.go:159		0x6317a0		eb0d			JMP 0x6317af					
+  reader.go:159		0x6317a2		e8b9d6e4ff		CALL runtime.gcWriteBarrier1(SB)		
+  reader.go:159		0x6317a7		488b542448		MOVQ 0x48(SP), DX				
+  reader.go:159		0x6317ac		498913			MOVQ DX, 0(R11)					
+  reader.go:159		0x6317af		488910			MOVQ DX, 0(AX)					
+  reader.go:159		0x6317b2		48c7401800000000	MOVQ $0x0, 0x18(AX)				
+  reader.go:159		0x6317ba		48c74020ffffffff	MOVQ $-0x1, 0x20(AX)				
+  main.go:20		0x6317c2		488d1d24230f00		LEAQ 0xf2324(IP), BX				
+  main.go:20		0x6317c9		b939000000		MOVL $0x39, CX					
+  main.go:20		0x6317ce		488d3d4a200e00		LEAQ 0xe204a(IP), DI				
+  main.go:20		0x6317d5		be10000000		MOVL $0x10, SI					
+  main.go:20		0x6317da		4c8d055f481500		LEAQ go:itab.*bytes.Reader,io.Reader(SB), R8	
+  main.go:20		0x6317e1		4989c1			MOVQ AX, R9					
+  main.go:20		0x6317e4		488b442470		MOVQ 0x70(SP), AX				
+  main.go:20		0x6317e9		e8b2c9fbff		CALL net/http.(*Client).Post(SB)		
+  main.go:21		0x6317ee		4885db			TESTQ BX, BX					
+  main.go:21		0x6317f1		753e			JNE 0x631831					
+  main.go:25		0x6317f3		488d1526940700		LEAQ 0x79426(IP), DX				
+  main.go:25		0x6317fa		4889542450		MOVQ DX, 0x50(SP)				
+  main.go:25		0x6317ff		488d157a271500		LEAQ 0x15277a(IP), DX				
+  main.go:25		0x631806		4889542458		MOVQ DX, 0x58(SP)				
+  print.go:314		0x63180b		488b1d861b3500		MOVQ os.Stdout(SB), BX				
+  print.go:314		0x631812		488d0547481500		LEAQ go:itab.*os.File,io.Writer(SB), AX		
+  print.go:314		0x631819		488d4c2450		LEAQ 0x50(SP), CX				
+  print.go:314		0x63181e		bf01000000		MOVL $0x1, DI					
+  print.go:314		0x631823		4889fe			MOVQ DI, SI					
+  print.go:314		0x631826		e8b593eaff		CALL fmt.Fprintln(SB)				
+  main.go:26		0x63182b		4883c478		ADDQ $0x78, SP					
+  main.go:26		0x63182f		5d			POPQ BP						
+  main.go:26		0x631830		c3			RET						
+  main.go:22		0x631831		488b4308		MOVQ 0x8(BX), AX				
+  main.go:22		0x631835		4889cb			MOVQ CX, BX					
+  main.go:22		0x631838		e86357e4ff		CALL runtime.gopanic(SB)			
+  main.go:16		0x63183d		488b4708		MOVQ 0x8(DI), AX				
+  main.go:16		0x631841		4889f3			MOVQ SI, BX					
+  main.go:16		0x631844		e85757e4ff		CALL runtime.gopanic(SB)			
+  main.go:16		0x631849		90			NOPL						
+  main.go:12		0x63184a		e851b7e4ff		CALL runtime.morestack_noctxt.abi0(SB)		
+  main.go:12		0x63184f		e9acfeffff		JMP main.main(SB)				

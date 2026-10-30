@@ -1,0 +1,8 @@
+panic: runtime error: integer divide by zero
+
+goroutine 1 [running]:
+main.divide(...)
+  /home/ossan/Projects/golab-2026/cmd/concept-006/crash/main.go:13
+main.main()
+  /home/ossan/Projects/golab-2026/cmd/concept-006/crash/main.go:8 +0xa
+exit status 2

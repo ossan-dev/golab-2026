@@ -1,0 +1,52 @@
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Code coverage profiles and other test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
+
+# Editor/IDE
+# .idea/
+# .vscode/
+.vscode/c_cpp_properties.json
+cmd/concept-003/part-a/suspect
+cmd/concept-003/part-b/observer
+cmd/concept-003/part-b/bpf_bpfeb.go
+cmd/concept-003/part-b/bpf_bpfeb.o
+cmd/concept-003/part-b/bpf_bpfel.go
+cmd/concept-003/part-b/bpf_bpfel.o
+cmd/concept-005/multiplexing/scheduler_demo
+cmd/concept-006/old/
+cmd/concept-006/scheduler_demo
+cmd/concept-006/scheduler_demo_noinline
+cmd/concept-006/sum/sum
+cmd/concept-007
+./secure_binary
+low_hanging_fruit.txt
+nm.txt
+readelf_https.txt
+secure_binary
+string_https.txt
+myapp
